@@ -1,6 +1,8 @@
 # gedcom-anniversaire
 Parse le fichier de généalogie au format gedcom .ged et envoie par email la liste des anniversaires du jour.
+
 Egalement le premier du mois, envoi par email la liste de tous les anniversaires de ce mois.
+
 L'envoi se fait à tous les emails d'une liste txt.
 
 Dans mon cas, j'utilise [Ancestris](http://ancestris.org) pour gérer mon arbre généalogique. Un excellent logiciel gratuit. Le script fonctionne sur tout fichier .ged qui respecte la norme.
