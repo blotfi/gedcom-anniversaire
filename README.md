@@ -18,11 +18,11 @@ il faut que la bibliothèque **python-gedcom** soit installée sur le système
 et lancer le script python anniv.py  
 Exécution manuelle :
 
-    python3.6 /home/blofib/anniv/anniv.py
+    python3.6 /home/user/anniv/anniv.py
 
 ou via un cron par exemple à 3h du matin :
 
-    0 3 * * * python3.6 /home/blofib/anniv/anniv.py
+    0 3 * * * python3.6 /home/user/anniv/anniv.py
 
 sur un Raspberry PI
 
