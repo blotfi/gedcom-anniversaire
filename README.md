@@ -1,6 +1,5 @@
 # gedcom-anniversaire
 Parse le fichier de généalogie au format gedcom .ged et envoie par email la liste des anniversaires du jour.
-
 Egalement le premier du mois, envoi par email la liste de tous les anniversaires de ce mois.
 
 L'envoi se fait à tous les emails d'une liste txt.
