@@ -1,4 +1,4 @@
-# gedcom-anniversaire
+# gedcom-anniversaire / birthday
 Parse le fichier de généalogie au format gedcom .ged et envoie par email la liste des anniversaires du jour.
 Egalement le premier du mois, envoi par email la liste de tous les anniversaires de ce mois.
 
@@ -29,5 +29,40 @@ sur un Raspberry PI
     /usr/bin/python3 /home/pi/Documents/py/anniv/anniv.py > /home/pi/Documents/py/anniv/anniv.log
 
 ou via le CRON :
+
+    0 3 * * * /usr/bin/python3 /home/pi/Documents/py/anniv/anniv.py > /tmp/anniv.log 2>&1
+
+___ 
+####_English_
+Parse the genealogy file of a gedcom .ged format and email the list of birthdays for the day.
+Also on the first of the month, it emails the list of all birthdays for that month.
+
+email are sents to all the destinators of a txt list.
+
+In my case, I use [Ancestris] (http://ancestris.org) to manage my family tree. Great free software. The script works on any .ged file that meets the standard.
+
+You must add two files
+
+    email_list.txt
+    tonfichier.ged
+
+the ** python-gedcom ** library must be installed on the system
+
+    pip3 install python-gedcom
+
+and run the anniv.py python script
+Manual execution:
+
+    python3.6 /home/user/anniv/anniv.py
+
+or via a cron for example at 3 am:
+
+    0 3 * * * python3.6 /home/user/anniv/anniv.py
+
+on a Raspberry PI
+
+    /usr/bin/python3 /home/pi/Documents/py/anniv/anniv.py > /home/pi/Documents/py/anniv/anniv.log
+
+ou via a CRON :
 
     0 3 * * * /usr/bin/python3 /home/pi/Documents/py/anniv/anniv.py > /tmp/anniv.log 2>&1
