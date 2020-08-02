@@ -33,7 +33,7 @@ ou via le CRON :
     0 3 * * * /usr/bin/python3 /home/pi/Documents/py/anniv/anniv.py > /tmp/anniv.log 2>&1
 
 ___ 
-####_English explanations_
+#### _English explanations_
 
 Parse the genealogy file of a gedcom .ged format and email the list of birthdays for the day.
 Also on the first of the month, it emails the list of all birthdays for that month.
