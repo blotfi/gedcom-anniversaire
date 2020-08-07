@@ -132,7 +132,7 @@ msg1 ="""
 <font color='#ff0000'><u>La liste des anniversaires d'aujourd'hui est :</u></font><br>
 """
 msg=msg+msg1+liste
-if found == 1 or foundmois == 1:
+if found == 1 or (foundmois == 1 and day == 1):
   server.sendmail("tongmail@gmail.com", liste_emails, msg.encode('utf-8'))
 server.quit()
 
